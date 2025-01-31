@@ -1,51 +1,156 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #ffffff;
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
 header {
-    background-color: #1c1c1c;
-    padding: 20px;
+    background: url('assets/background.jpg') no-repeat center center/cover;
+    padding: 60px 0;
     text-align: center;
 }
-nav ul {
-    list-style-type: none;
-    padding: 0;
+
+header .logo {
+    width: 150px;
+    margin-bottom: 20px;
 }
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
-nav ul li a {
-    color: #00ff00;
-    text-decoration: none;
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
 }
-main {
-    padding: 20px;
+
+/* Bonus Generator Section */
+.bonus-generator {
+    padding: 60px 0;
     text-align: center;
 }
-#bonus-generator {
-    margin-top: 50px;
+
+.bonus-generator h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
-#generate-btn {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #00ff00;
-    border: none;
-    cursor: pointer;
+
+.bonus-wheel {
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
 }
-#bonus-display {
-    margin-top: 20px;
-    font-size: 24px;
-    color: #00ff00;
-}
-footer {
-    background-color: #1c1c1c;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
+
+#spin-btn {
     width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#spin-btn:hover {
+    transform: scale(1.1);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ffcc00;
+}
+
+/* How It Works Section */
+.how-it-works {
+    background: #2a2a2a;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.step i {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Daily Rewards Section */
+.daily-rewards {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.daily-rewards h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#daily-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#daily-btn:hover {
+    background: #e6b800;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
