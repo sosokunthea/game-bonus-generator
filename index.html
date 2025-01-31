@@ -3,30 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Bonus Generator</title>
+    <title>Coin Master Free Bonus</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Game Bonus Generator</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <img src="assets/logo.png" alt="Coin Master Logo" class="logo">
+            <h1>Coin Master Free Bonus</h1>
+            <p>Unlock free spins, coins, and rewards daily!</p>
+        </div>
     </header>
+
+    <!-- Main Content -->
     <main>
-        <section id="bonus-generator">
-            <h2>Generate Your Bonus</h2>
-            <button id="generate-btn">Generate Bonus</button>
-            <div id="bonus-display"></div>
+        <!-- Bonus Generator Section -->
+        <section class="bonus-generator">
+            <div class="container">
+                <h2>Get Your Free Bonus</h2>
+                <div class="bonus-wheel">
+                    <img src="assets/spin-button.png" alt="Spin Button" id="spin-btn">
+                    <div id="result"></div>
+                </div>
+                <p>Click the button above to claim your free bonus!</p>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <i class="fas fa-mouse-pointer"></i>
+                        <h3>Step 1</h3>
+                        <p>Click the "Spin" button to generate your free bonus.</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-gift"></i>
+                        <h3>Step 2</h3>
+                        <p>Receive your free spins, coins, or rewards.</p>
+                    </div>
+                    <div class="step">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Step 3</h3>
+                        <p>Use your bonus in Coin Master and enjoy!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Rewards Section -->
+        <section class="daily-rewards">
+            <div class="container">
+                <h2>Daily Rewards</h2>
+                <p>Come back every day to claim new bonuses and rewards!</p>
+                <button id="daily-btn">Claim Daily Reward</button>
+            </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Game Bonus Generator</p>
+        <div class="container">
+            <p>&copy; 2023 Coin Master Free Bonus. All rights reserved.</p>
+            <p>This website is not affiliated with Coin Master. For entertainment purposes only.</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
