@@ -1,11 +1,21 @@
-document.getElementById('generate-btn').addEventListener('click', function() {
+// Bonus Generator Logic
+document.getElementById('spin-btn').addEventListener('click', function () {
     const bonuses = [
-        "10 Gold Coins",
-        "5 Health Potions",
-        "20% Discount on Next Purchase",
-        "1 Rare Item",
-        "50 Experience Points"
+        "🎉 50 Free Spins",
+        "💰 100,000 Coins",
+        "🛡️ 1 Shield",
+        "🔥 3 Pet Food",
+        "🌟 10,000 Coins",
+        "⚔️ 5 Free Spins",
+        "🔮 1 Mystery Box",
+        "🛒 20% Discount on Next Purchase",
     ];
+
     const randomBonus = bonuses[Math.floor(Math.random() * bonuses.length)];
-    document.getElementById('bonus-display').textContent = randomBonus;
+    document.getElementById('result').innerHTML = `<p>🎁 <strong>${randomBonus}</strong></p>`;
+});
+
+// Daily Reward Logic
+document.getElementById('daily-btn').addEventListener('click', function () {
+    alert("🎉 Congratulations! You've claimed your daily reward!");
 });
